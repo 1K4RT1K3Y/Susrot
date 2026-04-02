@@ -1,0 +1,72 @@
+.ForumIcon {
+    width: 35px;
+    margin: 10px;
+    border-radius: 27px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 955px; 
+    background-color: rgb(212, 211, 211);
+    border-radius: 7px;
+    margin:7px auto;
+    height: 75vh;
+    overflow-y: auto;
+}
+.message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 60%;
+}
+.left {
+    background-color: #f1f0f0;
+    align-self: flex-start;
+    float :left;
+    clear:both;
+}
+.right {
+    background-color:  #858585;
+    align-self: flex-end;
+    float :right;
+    clear:both;
+}
+#send-container {
+    display: flex;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    max-width: 995px;
+    width: 92%;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 16.9%;
+}
+#messageInput {
+    width: 92%;
+    border: 1px solid #a39d9d;
+    height: 35px;
+
+}
+.sendButton {
+    width: 30px;
+    border: 1px solid #a39d9d;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+
+
+}
+.moreButton {
+    width: 35px;
+    margin: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #a39d9d;
+}
+.btn{
+    width:30px;
+}
+
