@@ -3,15 +3,34 @@
     margin: 10px;
     border-radius: 27px;
 }
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin: 4px auto 0;
+    align-items: flex-start;
+}
 .container {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    max-width: 955px; 
+    width: 100%;
+    max-width: 1000px; 
     background-color: rgb(212, 211, 211);
     border-radius: 7px;
-    margin:7px auto;
-    height: 75vh;
+    margin:7px 0px 0px;
+    height: 77vh;
+    overflow-y: auto;
+}
+.grouplist{
+    display: flex;
+    padding: 25px;
+    width: 90%;
+    max-width: 150px; 
+    background-color: rgb(212, 211, 211);
+    border-radius: 7px;
+    margin-top: 7px;
+    height: 85vh;
     overflow-y: auto;
 }
 .message {
@@ -32,17 +51,21 @@
     float :right;
     clear:both;
 }
+.send {
+    width: 100%;
+    max-width: 995px;
+    margin: 7px 15px 0px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
 #send-container {
     display: flex;
-    position: absolute;
-    margin: auto;
+    position: relative;
     text-align: center;
     max-width: 995px;
-    width: 92%;
-    overflow-y: auto;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
-    margin-left: 16.9%;
 }
 #messageInput {
     width: 92%;
@@ -69,4 +92,8 @@
 .btn{
     width:30px;
 }
-
+.chatsection{
+    margin-left: 0px;
+    max-width: 1000px;
+    width: 100%;
+}

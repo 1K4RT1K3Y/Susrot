@@ -26,3 +26,10 @@ append(`${data.name}: ${data.message}`, 'left')
 socket.on('left', name =>{
 append(`${name} left the chat`, 'left')
 })
+socket.on('join-group', groupName => {
+socket.join(groupName);
+console.log(`${socket.id} joined group ${groupName}`);
+}) 
+socket.on('send-message', ({ groupName, message, username }) => {
+io.to(groupName).emit('receive-message', { message, username });
+})
